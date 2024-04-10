@@ -27,61 +27,61 @@ title: "NetConnect: Your Ultimate Contact Management Solution"
 ## Features
 
 ### Core Functionality
-- **Viewing help:** `help`  
+- **Viewing help:** `help`
   Access detailed command usage instructions anytime.
 
-- **Adding a person:** `add`  
+- **Adding a person:** `add`
   Create new contacts in your network effortlessly.
 
-- **Deleting a person:** `delete`  
+- **Deleting a person:** `delete`
   Remove contacts that are no longer needed.
 
-- **Listing all persons:** `list`  
+- **Listing all persons:** `list`
   Get an overview of all your stored contacts.
 
-- **Editing a person:** `edit`  
+- **Editing a person:** `edit`
   Update contact details as needed.
 
 ### Advanced Search
-- **Locating persons by name:** `find`  
+- **Locating persons by name:** `find`
   Quickly find contacts by their name, phone, remark, role, or tags.
 
 ### Data Management
-- **Clearing all entries:** `clear`  
+- **Clearing all entries:** `clear`
   Wipe your contact list for a fresh start.
 
-- **Create Relations between Profiles:** `relate`  
+- **Create Relations between Profiles:** `relate`
   Link contacts together to map out your network.
 
-- **Show Relations Associated to a Person:** `showrelated`  
+- **Show Relations Associated to a Person:** `showrelated`
   View the network of connections for a specific contact.
 
-- **Open on Last State**  
+- **Open on Last State**
   Pick up right where you left off in your last session.
 
-- **Export Current View to CSV File:** `export`  
+- **Export Current View to CSV File:** `export`
   Export your contacts for use in other applications.
 
 ### Additional Features
-- **Never Miss a Birthday!**  
+- **Never Miss a Birthday!**
   Keep track of important dates like birthdays.
 
-- **Exiting the program:** `exit`  
+- **Exiting the program:** `exit`
   Close NetConnect safely and securely.
 
 ### Data Handling
-- **Saving the data**  
+- **Saving the data**
   Ensure your changes are stored persistently.
 
-- **Editing the data file**  
+- **Editing the data file**
   Make bulk changes to your contact list externally.
 
 ## Support
 
-- **FAQ**  
+- **FAQ**
   Find answers to common questions about NetConnect.
 
-- **Known Issues**  
+- **Known Issues**
   Stay informed about any known software issues.
 
 ## For Developers
