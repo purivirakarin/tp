@@ -46,7 +46,9 @@ public class EditCommandParser implements Parser<EditCommand> {
                 PREFIX_EMAIL, PREFIX_ADDRESS, PREFIX_TAG, PREFIX_PREFERENCES, PREFIX_PRODUCTS, PREFIX_DEPARTMENT,
                 PREFIX_JOBTITLE, PREFIX_SKILLS, PREFIX_ROLE, PREFIX_TERMSOFSERVICE, PREFIX_REMARK);
 
-        argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_ID, PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ADDRESS);
+        argMultimap.verifyNoDuplicatePrefixesFor(PREFIX_ID, PREFIX_NAME, PREFIX_PHONE, PREFIX_EMAIL, PREFIX_ADDRESS,
+                PREFIX_PREFERENCES, PREFIX_DEPARTMENT, PREFIX_JOBTITLE, PREFIX_ROLE, PREFIX_TERMSOFSERVICE,
+                PREFIX_REMARK);
 
         if (argMultimap.getValue(PREFIX_ID).isEmpty()) {
             throw new ParseException(
