@@ -147,6 +147,7 @@ Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/ROLE [r/remark] [t/TAG
 
 <box type="info">
 <Strong>Info:</Strong> NetConnect checks for unique profiles by its NAME, PHONE NUMBER and EMAIL. It does not allow you to create two profiles with identical name, phone number and email.
+</box>
 
 <div style="page-break-after: always;"></div>
 
