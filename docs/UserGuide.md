@@ -21,26 +21,27 @@ If you relate to this problem we identified, then NetConnect might be just right
 - [Quick start](#quick-start)
 - [Features](#features)
   - [Data Constraints](#data-constraints)
-  - [Viewing help : `help`](#viewing-help-help)
+  - [Viewing help : `help`](#viewing-help--help)
   - [Adding a person: `add`](#adding-a-person-add)
-  - [Deleting a person : `delete`](#deleting-a-person-delete)
-  - [Listing all contacts : `list`](#listing-all-contacts-list)
-  - [Editing a person : `edit`](#editing-a-person-edit)
-  - [Locating Contacts : `find`](#locating-contacts-find)
-  - [Clearing all entries : `clear`](#clearing-all-entries-clear)
-  - [Create Relations between Profiles : `relate`](#create-relations-between-profiles-relate)
-  - [Remove Relations between Profiles : `unrelate`](#remove-relations-between-profiles-unrelate)
-  - [Show Relations Associated to a Person : `showrelated`](#show-relations-associated-to-a-person-showrelated)
+  - [Deleting a person : `delete`](#deleting-a-person--delete)
+  - [Listing all contacts : `list`](#listing-all-contacts--list)
+  - [Editing a person : `edit`](#editing-a-person--edit)
+  - [Locating Contacts : `find`](#locating-contacts--find)
+  - [Clearing all entries : `clear`](#clearing-all-entries--clear)
+  - [Create Relations between Profiles : `relate`](#create-relations-between-profiles--relate)
+  - [Remove Relations between Profiles : `unrelate`](#remove-relations-between-profiles--unrelate)
+  - [Show Relations Associated to a Person : `showrelated`](#show-relations-associated-to-a-person--showrelated)
   - [Open on Last State](#open-on-last-state)
-  - [Export view to CSV File : `export`](#export-view-to-csv-file-export)
-  - [Exiting the program : `exit`](#exiting-the-program-exit)
+  - [Export view to CSV File : `export`](#export-view-to-csv-file--export)
+  - [Exiting the program : `exit`](#exiting-the-program--exit)
   - [Saving the data](#saving-the-data)
   - [Editing the data file](#editing-the-data-file)
-- [Future Implementations](#future-implementations)
-  - [Truncate text in GUI](#truncate-text-in-gui)
+- [Planned Enhancements](#planned-enhancements)
 - [FAQ](#faq)
 - [Known issues](#known-issues)
 - [Command summary](#command-summary)
+
+<div style="page-break-after: always;"></div>
 
 # Quick start
 
@@ -61,6 +62,7 @@ If you relate to this problem we identified, then NetConnect might be just right
 1. Refer to the [Features](#features) below for details of each command.
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 # Features
 
@@ -86,6 +88,8 @@ If you relate to this problem we identified, then NetConnect might be just right
 * If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
   </box>
 
+<div style="page-break-after: always;"></div>
+
 ## Data Constraints
 
 **Constraints:**
@@ -105,7 +109,7 @@ Here are the constraints for each field in the application:
 * `TERMS OF SERVICE`: Terms of service can take any format.
 * `PRODUCTS`: Product names should only contain alphanumeric characters and spaces.
 
-<section id="help"><br>
+<div style="page-break-after: always;"></div>
 
 ## Viewing help : `help`
 
@@ -115,10 +119,8 @@ Format: `help`
 
 ![help message](images/helpMessage.png)
 
-</section>
 
-
-<section id="add">
+<div style="page-break-after: always;"></div>
 
 ## Adding a person: `add`
 
@@ -145,10 +147,8 @@ Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/ROLE [r/remark] [t/TAG
 
 <box type="info">
 <Strong>Info:</Strong> NetConnect checks for unique profiles by its NAME, PHONE NUMBER and EMAIL. It does not allow you to create two profiles with identical name, phone number and email.
-</box>
-<br>
 
-<section id="delete">
+<div style="page-break-after: always;"></div>
 
 ## Deleting a person : `delete`
 
@@ -173,9 +173,7 @@ Examples:
 ![Delete Warning](images/deletewarning.png)
 </box> <br>
 
-</section>
-
-<section id="list">
+<div style="page-break-after: always;"></div>
 
 ## Listing all contacts : `list`
 
@@ -184,9 +182,7 @@ Shows a list of all contacts in the address book.
 Format: `list`
 ![list](images/list.png)
 
-</section>
-
-<section id="edit">
+<div style="page-break-after: always;"></div>
 
 ## Editing a person : `edit`
 
@@ -208,9 +204,7 @@ Examples:
 ![EditResultExample](images/editExample.png)
 * `edit i/2 n/Betsy Crower t/` Edits the name of the person with ID of 2 to be `Betsy Crower` and clears all existing tags.
 
-</section>
-
-<section id="find"> <br>
+<div style="page-break-after: always;"></div>
 
 ## Locating Contacts : `find`
 
@@ -255,9 +249,7 @@ Stacking find by role and tag example
 
 ![result for 'find employee friends'](images/stackEmployeeFriends.png)
 
-</section>
-
-<section id="clear">
+<div style="page-break-after: always;"></div>
 
 ## Clearing all entries : `clear`
 
@@ -272,10 +264,7 @@ Format: `clear`
 ![result for 'clear warning'](images/ClearWarning.png)
 </box>
 
-
-</section> <br>
-
-<section id="relate">
+<div style="page-break-after: always;"></div>
 
 ## Create Relations between Profiles : `relate`
 
@@ -287,9 +276,7 @@ Example: `relate i/1 i/3` creates a relation between the profiles with ID of 1 a
 
 ![result for 'relate result'](images/relateResult.png)
 
-</section>
-
-<section id="unrelate">
+<div style="page-break-after: always;"></div>
 
 ## Remove Relations between Profiles : `unrelate`
 
@@ -301,10 +288,7 @@ Example: `unrelate i/1 i/23` removes a relation between the profiles with ID of 
 
 ![result for 'unrelate result'](images/unrelateResult.png)
 
-
-</section>
-
-<section id="showrelated">
+<div style="page-break-after: always;"></div>
 
 ## Show Relations Associated to a Person : `showrelated`
 
@@ -320,17 +304,12 @@ Example: `showrelated i/1` shows all relations between the profile with ID 1 and
 
 ![result for 'showrelated result'](images/showrelatedResult.png)
 
-</section>
-
-<section id="open-on-last-state">
+<div style="page-break-after: always;"></div>
 
 ## Open on Last State
 With every change to the command input, NetConnect saves and updates the command input in a separate file. When the app closes and is opened again, the last command present before closure will be retrieved from the separate file and input into the command field (if any). This way, you never have to worry about losing progress!
 
-</section>
-
-
-<section id="export">
+<div style="page-break-after: always;"></div>
 
 ## Export view to CSV File : `export`
 Retrieve information on a group of profiles at once with this function! This can be useful for consolidating all the emails or contact number at once, or to share information with third parties.
@@ -371,9 +350,7 @@ Step 2: `export client.csv`
 The CSV file named clients.csv containing all client contacts is exported to a folder on your laptop located within the same directory as the NetConnect application.
 ![result for 'CSV file'](images/csvfile.png)
 
-</section>
-
-<section id="exit-program">
+<div style="page-break-after: always;"></div>
 
 ## Exiting the program : `exit`
 
@@ -381,19 +358,11 @@ Exits the program.
 
 Format: `exit`
 
-</section>
-
-
-<section id="saving-the-data">
+<div style="page-break-after: always;"></div>
 
 ## Saving the data
 
 NetConnect data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
-
-</section>
-
-
-<section id="editing-the-data-file">
 
 ## Editing the data file
 
@@ -402,8 +371,9 @@ NetConnect data are saved automatically as a JSON file `[JAR file location]/data
 **Caution:**
 If your changes to the data file makes its format invalid, NetConnect will discard all data and start with an empty data file at the next run. Hence, it is recommended to take a backup of the file before editing it.<br> Furthermore, certain edits can cause the NetConnect to behave in unexpected ways (e.g., if a value entered is outside the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 
-</section>
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 # Planned Enhancements
 The NetConnect team is working on new features and fixes for you, but they are unfortunately unavailable in this current implementation. We intend to have future fixes for these occurences below!
@@ -418,6 +388,8 @@ The NetConnect team is working on new features and fixes for you, but they are u
 Further details on the planned enhancements can be found in the Developer Guide.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 # FAQ
 
@@ -444,20 +416,22 @@ Further details on the planned enhancements can be found in the Developer Guide.
 
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 # Command summary
-| Action                   | Format                                                                                                                            | Examples                                                                                                                                                                                                                   |
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Help**                 | `help`                                                                                                                            | `help`                                                                                                                                                                                                                     |
-| **Add (Employee)**       | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Employee [t/TAG] [dept/DEPARTMENT] [job/JOB] [skills/SKILL1] [skills/SKILL2]  ` | `add n/Bob Ye p/8928732 e/boby@example.com a/Blk 11, Clementi Ave 1, #03-32 t/friends t/coreTeam r/requires follow up on pay raise role/employee dept/HR job/Manager skills/Java` |
-| **Add (Client)**         | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Client [t/TAG] [pref/PREFERENCES] [prod/PRODUCT 1] [prod/PRODUCT 2]`            | `add n/Benson Mayer p/87728933 e/mayerb@example.com a/311, Clementi Ave 2, #02-25 role/Client pref/Dairy-free prod/Sourdough bread prod/Raisin Bread`                                                                      |
-| **Add (Supplier)**       | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Supplier [t/TAG] [tos/TERMS OF SERVICE] [prod/PRODUCT 1] [prod/PRODUCT 2]`      | `add n/Fiona Kunz p/94824272 e/lydia@example.com a/little tokyo role/Supplier tos/Delivery within 2 weeks prod/Office Supplies prod/Furniture`                                                                              |
-| **List**                 | `list`                                                                                                                            | `list`                                                                                                                                                                                                                     |
-| **Delete**               | `delete [i/ID] [n/NAME]`                                                                                                          | `delete i/123`, `delete n/John Doe`                                                                                                                                                                                        |
-| **Edit**                 | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/ROLE [t/TAG]…​` (other fields specific to the role)                             | `edit i/123 n/James Lee e/jameslee@example.com`                                                                                                                                                                            |
-| **Find**                 | `find [n/NAME] [t/TAG] [p/PHONE] [role/ROLE] [r/REMARK]`                                                                          | `find role/employee` , followed by `find n/Bob` to stack filters                                                                                                                                                           |
-| **Relate Profiles**      | `relate i/ID i/ID`                                                                                                                | `relate i/1 i/2`                                                                                                                                                                                                           |
-| **Unrelate Profiles**    | `unrelate i/ID i/ID`                                                                                                              | `relate i/1 i/2`                                                                                                                                                                                                           |
-| **Show related Profile** | `showrelated i/ID`                                                                                                                | `showrelated i/2`                                                                                                                                                                                                          |
-| **Export**               | `export [filename]`                                                                                                               | `export ClientInfo.csv`                                                                                                                                                                                                    |
-| **Clear**                | `clear`                                                                                                                           | `clear`                                                                                                                                                                                                                    |
-| **Exit**                 | `exit`                                                                                                                            | `exit`                                                                                                                                                                                                                     |
+| Action                   | Format                                                                                                              | Examples                                                                                                                                                                                                                   |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Help**                 | `help`                                                                                                              | `help`                                                                                                                                                                                                                     |
+| **Add (Employee)**       | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Employee [t/TAG] [dept/DEPARTMENT] [job/JOB] [skills/SKILL]...  ` | `add n/Bob Ye p/8928732 e/boby@example.com a/Blk 11, Clementi Ave 1, #03-32 t/friends t/coreTeam r/requires follow up on pay raise role/employee dept/HR job/Manager skills/Java` |
+| **Add (Client)**         | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Client [t/TAG] [pref/PREFERENCES] [prod/PRODUCT]...`              | `add n/Benson Mayer p/87728933 e/mayerb@example.com a/311, Clementi Ave 2, #02-25 role/Client pref/Dairy-free prod/Sourdough bread prod/Raisin Bread`                                                                      |
+| **Add (Supplier)**       | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/Supplier [t/TAG] [tos/TERMS OF SERVICE] [prod/PRODUCT]...`        | `add n/Fiona Kunz p/94824272 e/lydia@example.com a/little tokyo role/Supplier tos/Delivery within 2 weeks prod/Office Supplies prod/Furniture`                                                                              |
+| **List**                 | `list`                                                                                                              | `list`                                                                                                                                                                                                                     |
+| **Delete**               | `delete [i/ID] [n/NAME]`                                                                                            | `delete i/123`, `delete n/John Doe`                                                                                                                                                                                        |
+| **Edit**                 | `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/ROLE [t/TAG]…​` (other fields specific to the role)               | `edit i/123 n/James Lee e/jameslee@example.com`                                                                                                                                                                            |
+| **Find**                 | `find [n/NAME] [t/TAG] [p/PHONE_NUMBER] [role/ROLE] [r/REMARK]`                                                     | `find role/employee` , followed by `find n/Bob` to stack filters                                                                                                                                                           |
+| **Relate Profiles**      | `relate i/ID i/ID`                                                                                                  | `relate i/1 i/2`                                                                                                                                                                                                           |
+| **Unrelate Profiles**    | `unrelate i/ID i/ID`                                                                                                | `relate i/1 i/2`                                                                                                                                                                                                           |
+| **Show related Profile** | `showrelated i/ID`                                                                                                  | `showrelated i/2`                                                                                                                                                                                                          |
+| **Export**               | `export [filename]`                                                                                                 | `export ClientInfo.csv`                                                                                                                                                                                                    |
+| **Clear**                | `clear`                                                                                                             | `clear`                                                                                                                                                                                                                    |
+| **Exit**                 | `exit`                                                                                                              | `exit`                                                                                                                                                                                                                     |
