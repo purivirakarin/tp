@@ -36,11 +36,12 @@ If you relate to this problem we identified, then NetConnect might be just right
   - [Exiting the program : `exit`](#exiting-the-program-exit)
   - [Saving the data](#saving-the-data)
   - [Editing the data file](#editing-the-data-file)
-- [Future Implementations](#future-implementations)
-  - [Truncate text in GUI](#truncate-text-in-gui)
+- [Planned Enhancements](#planned-enhancements)
 - [FAQ](#faq)
 - [Known issues](#known-issues)
 - [Command summary](#command-summary)
+
+<div style="page-break-after: always;"></div>
 
 # Quick start
 
@@ -61,6 +62,7 @@ If you relate to this problem we identified, then NetConnect might be just right
 1. Refer to the [Features](#features) below for details of each command.
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
 
 # Features
 
@@ -86,6 +88,8 @@ If you relate to this problem we identified, then NetConnect might be just right
 * If you are using a PDF version of this document, be careful when copying and pasting commands that span multiple lines as space characters surrounding line-breaks may be omitted when copied over to the application.
   </box>
 
+<div style="page-break-after: always;"></div>
+
 ## Data Constraints
 
 **Constraints:**
@@ -105,7 +109,7 @@ Here are the constraints for each field in the application:
 * `TERMS OF SERVICE`: Terms of service can take any format.
 * `PRODUCTS`: Product names should only contain alphanumeric characters and spaces.
 
-<section id="help"><br>
+<div style="page-break-after: always;"></div>
 
 ## Viewing help : `help`
 
@@ -115,10 +119,8 @@ Format: `help`
 
 ![help message](images/helpMessage.png)
 
-</section>
 
-
-<section id="add">
+<div style="page-break-after: always;"></div>
 
 ## Adding a person: `add`
 
@@ -145,10 +147,8 @@ Format: `add n/NAME p/PHONE_NUMBER e/EMAIL a/ADDRESS role/ROLE [r/remark] [t/TAG
 
 <box type="info">
 <Strong>Info:</Strong> NetConnect checks for unique profiles by its NAME, PHONE NUMBER and EMAIL. It does not allow you to create two profiles with identical name, phone number and email.
-</box>
-<br>
 
-<section id="delete">
+<div style="page-break-after: always;"></div>
 
 ## Deleting a person : `delete`
 
@@ -173,9 +173,7 @@ Examples:
 ![Delete Warning](images/deletewarning.png)
 </box> <br>
 
-</section>
-
-<section id="list">
+<div style="page-break-after: always;"></div>
 
 ## Listing all contacts : `list`
 
@@ -184,9 +182,7 @@ Shows a list of all contacts in the address book.
 Format: `list`
 ![list](images/list.png)
 
-</section>
-
-<section id="edit">
+<div style="page-break-after: always;"></div>
 
 ## Editing a person : `edit`
 
@@ -208,9 +204,7 @@ Examples:
 ![EditResultExample](images/editExample.png)
 * `edit i/2 n/Betsy Crower t/` Edits the name of the person with ID of 2 to be `Betsy Crower` and clears all existing tags.
 
-</section>
-
-<section id="find"> <br>
+<div style="page-break-after: always;"></div>
 
 ## Locating Contacts : `find`
 
@@ -255,9 +249,7 @@ Stacking find by role and tag example
 
 ![result for 'find employee friends'](images/stackEmployeeFriends.png)
 
-</section>
-
-<section id="clear">
+<div style="page-break-after: always;"></div>
 
 ## Clearing all entries : `clear`
 
@@ -272,10 +264,7 @@ Format: `clear`
 ![result for 'clear warning'](images/ClearWarning.png)
 </box>
 
-
-</section> <br>
-
-<section id="relate">
+<div style="page-break-after: always;"></div>
 
 ## Create Relations between Profiles : `relate`
 
@@ -287,9 +276,7 @@ Example: `relate i/1 i/3` creates a relation between the profiles with ID of 1 a
 
 ![result for 'relate result'](images/relateResult.png)
 
-</section>
-
-<section id="unrelate">
+<div style="page-break-after: always;"></div>
 
 ## Remove Relations between Profiles : `unrelate`
 
@@ -301,10 +288,7 @@ Example: `unrelate i/1 i/23` removes a relation between the profiles with ID of 
 
 ![result for 'unrelate result'](images/unrelateResult.png)
 
-
-</section>
-
-<section id="showrelated">
+<div style="page-break-after: always;"></div>
 
 ## Show Relations Associated to a Person : `showrelated`
 
@@ -320,17 +304,12 @@ Example: `showrelated i/1` shows all relations between the profile with ID 1 and
 
 ![result for 'showrelated result'](images/showrelatedResult.png)
 
-</section>
-
-<section id="open-on-last-state">
+<div style="page-break-after: always;"></div>
 
 ## Open on Last State
 With every change to the command input, NetConnect saves and updates the command input in a separate file. When the app closes and is opened again, the last command present before closure will be retrieved from the separate file and input into the command field (if any). This way, you never have to worry about losing progress!
 
-</section>
-
-
-<section id="export">
+<div style="page-break-after: always;"></div>
 
 ## Export view to CSV File : `export`
 Retrieve information on a group of profiles at once with this function! This can be useful for consolidating all the emails or contact number at once, or to share information with third parties.
@@ -371,9 +350,7 @@ Step 2: `export client.csv`
 The CSV file named clients.csv containing all client contacts is exported to a folder on your laptop located within the same directory as the NetConnect application.
 ![result for 'CSV file'](images/csvfile.png)
 
-</section>
-
-<section id="exit-program">
+<div style="page-break-after: always;"></div>
 
 ## Exiting the program : `exit`
 
@@ -381,19 +358,11 @@ Exits the program.
 
 Format: `exit`
 
-</section>
-
-
-<section id="saving-the-data">
+<div style="page-break-after: always;"></div>
 
 ## Saving the data
 
 NetConnect data are saved in the hard disk automatically after any command that changes the data. There is no need to save manually.
-
-</section>
-
-
-<section id="editing-the-data-file">
 
 ## Editing the data file
 
@@ -402,8 +371,9 @@ NetConnect data are saved automatically as a JSON file `[JAR file location]/data
 **Caution:**
 If your changes to the data file makes its format invalid, NetConnect will discard all data and start with an empty data file at the next run. Hence, it is recommended to take a backup of the file before editing it.<br> Furthermore, certain edits can cause the NetConnect to behave in unexpected ways (e.g., if a value entered is outside the acceptable range). Therefore, edit the data file only if you are confident that you can update it correctly.
 
-</section>
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 # Planned Enhancements
 The NetConnect team is working on new features and fixes for you, but they are unfortunately unavailable in this current implementation. We intend to have future fixes for these occurences below!
@@ -418,6 +388,8 @@ The NetConnect team is working on new features and fixes for you, but they are u
 Further details on the planned enhancements can be found in the Developer Guide.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 # FAQ
 
@@ -443,6 +415,8 @@ Further details on the planned enhancements can be found in the Developer Guide.
 1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
 
 # Command summary
 | Action                   | Format                                                                                                                            | Examples                                                                                                                                                                                                                   |
